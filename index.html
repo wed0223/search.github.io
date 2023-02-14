@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Boogle</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+		@import url("https://font.elice.io/EliceDigitalCoding.css");
+		body{margin: 0; font-family: 'Noto Sans KR'; cursor: url("img/pointer.png") 20 30,auto;}
+
+		.elice{font-family: 'Elice Digital Coding', 'monospace'; letter-spacing: 0.2rem;}
+
+		p{margin: 0;}
+
+		.flex{display: flex;}
+		.height1{height: 100vh;}
+		.width1{width: 100vw;}
+		.black{background: black;}
+		.textwhite{color: white;}
+		.textcenter{text-align: center;}
+
+		
+		.marginauto{margin: auto;}
+		.bor-bottom-white{border-bottom: white solid 1px;}
+		.relative{position: relative;}
+		.absolute{position: absolute;}
+
+		.search{width: 638px;}
+		.searchbox{margin-top: 83px; position: relative;}
+		.boogle{font-size: 140px;}
+
+		.searchfont{font-size: 28px;}
+		.clickfont{font-size: 22px; top: 11px; left: 23px; font-weight: 600;}
+		.searchicon{position: absolute;width: 32px; right: 5px;}
+
+		.clkbutton{position: relative; width:50px;}
+		.clk{position: absolute;right: 0; bottom:50px; width: 138px; display: none;}
+		.clkbutton:hover + .clk{display: block;}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="height1 black relative">
+			<div class="absolute" style="top: 45%; left: 50%; 	transform:  translate(-50%, -50%);">
+				<div class="textcenter">
+					<p class="textwhite boogle">Boogle</p>
+				</div>
+
+				<div class="searchbox" style="width:872px;">
+
+					<div class="flex search marginauto bor-bottom-white" style="padding-bottom: 5px;">
+						<div class="textwhite searchfont" style="padding-left: 5px; width:588px;">
+						<p>Kim MeongMoong</p>
+						</div>
+
+						<div class="clkbutton">
+							<!-- <a href=""> -->
+								<img src="img/search.png" class="searchicon">
+							<!-- </a> -->
+						</div>
+
+						<div class="clk">
+							<div class="relative">
+								<p class="absolute elice clickfont">CLICK!</p>
+							</div>
+							<img src="img/click.png" style="width: 138px;">
+						</div>
+
+					</div>
+
+					</div>
+
+
+				</div>
+						
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
+</body>
+</html>
